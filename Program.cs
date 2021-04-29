@@ -10,6 +10,16 @@ namespace phonelist
 {
     class Program
     {
+        /* För att få MySqlCommand att fungera:
+         *   Tools → Nuget Package Manager → Package Manager Console
+         * I consolen skriv:
+         *   Install-Package MySqlConnector -Version 1.3.7
+         * Källa: https://www.nuget.org/packages/MySqlConnector/
+         * Röda vågor under fixas med MySqlCommand:
+         *   using MySqlConnector;
+         *   using System.Data.SqlClient;
+         */
+
         /* ÄNDRA HÄR NEDANFÖR: */
         static string connString = "Server=localhost;User ID=root;Password=dittlösenord;Database=dindatabas";
         static string table = "dintabell";
